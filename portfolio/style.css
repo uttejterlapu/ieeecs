@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Nav */
+.nav-bar{
+    border-bottom:1px solid black ;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+}
+.nav-logo{
+    width:100px ;
+}
+
+header {
+    padding: 1.7rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    align-items: center;
+  
+}
+.logo {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.logo a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.social a{
+  font-size: 20px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: .97rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    padding: 1rem;
+    padding: 0.4rem 1rem;
+}
+
+nav a:hover {
+    border-radius: 1rem;
+    transition: all.3s ease-in-out;
+}
+
+#click {
+    display: none;
+}
+
+.menu i {
+    color: #000000;
+}
+
+.menu {
+    display: none;
+}
+/* Nav */
+/*Home*/
+.container{
+    margin: 10px;
+}
+
+.main-card{
+    width: 500px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.flex-main-card{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.main-card-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.main-card-content h3, h4 ,p{
+    margin-top: 8px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.card{
+    width: 280px;
+    height: 370px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+
+}
+
+.card-content h3, h4 ,p{
+    margin-top: 8px;
+}
+
+@media only screen and (max-width:480px) {
+    .menu {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    header {
+        padding: 0.7rem 1rem;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    nav {
+        position: absolute;
+        display: grid;
+        top: 75px;
+        text-align: center;
+        background-color: #fff;
+        left: -100%;
+        z-index: 1;
+        width: 100%;
+    }
+
+    #click:checked~nav {
+        left: 0%;
+        transition: all 0.3s ease;
+    }
+    .flex-main-card{
+        margin: 20px;
+    }    
+}
